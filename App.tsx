@@ -58,14 +58,13 @@ const Section: React.FC<{
 };
 
 const App = () => {
-    const isDarkMode = useColorScheme() === 'dark';
-    const test = 'test';
+                        const isDarkMode = useColorScheme() === "dark";
 
-    const backgroundStyle = {
-        backgroundColor: isDarkMode ? Colors.darker : Colors.lighter
-    };
+                        const backgroundStyle = {
+                            backgroundColor: isDarkMode ? Colors.darker : Colors.lighter
+                        };
 
-    return (
+        return (
         <SafeAreaView style={backgroundStyle}>
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
