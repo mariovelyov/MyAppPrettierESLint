@@ -52,8 +52,8 @@
             "pre-commit": "lint-staged"
         }
     },
-    "ling-stage": {
-        "*.{js, .json, tsx}": [
+    "lint-stage": {
+        "*.{js, json, tsx}": [
             "prettier --single-quote --write",
             "git add"
         ]
